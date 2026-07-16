@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Fauzian Fajar E</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--================ NAVBAR ================-->
+    <header>
+        <div class="logo">
+            Fauzian.
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#journey">Journey</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--================ HERO ================-->
+    <section id="home" class="hero">
+        <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+            <h3>Hello, I'm</h3>
+            <h1>Fauzian Fajar E</h1>
+            <h2>Full Stack Developer</h2>
+            <p>
+                I build modern websites, web applications,
+                and user-friendly interfaces.
+            </p>
+
+            <div class="hero-button">
+                <a href="#">Download CV</a>
+                <a href="#journey">My Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-right" data-aos="fade-left" data-aos-duration="1000">
+            <img src="assets/profile.jpg" alt="profile">
+        </div>
+    </section>
+
+    <!--================ ABOUT ================-->
+    <section id="about" class="about" data-aos="fade-up" data-aos-duration="1000">
+        <h2>About Me</h2>
+        <p>
+            Saya adalah mahasiswa Teknik Informatika yang
+            memiliki ketertarikan pada Web Development,
+            UI/UX Design, serta Artificial Intelligence.
+
+            Saya senang membangun aplikasi modern menggunakan
+            Django, Firebase, JavaScript, dan teknologi web lainnya.
+        </p>
+    </section>
+
+    <!--================ MY JOURNEY ================-->
+    <section id="journey" class="journey" data-aos="fade-up" data-aos-duration="1000">
+        <h2>My Journey</h2>
+        <p>
+            Projects • Technologies • Certificates
+        </p>
+
+        <!-- TAB -->
+        <div class="tab-menu" data-aos="fade-up" data-aos-delay="100">
+            <button class="tab active" onclick="openTab('projects')">
+                Projects
+            </button>
+            <button class="tab" onclick="openTab('tech')">
+                Technologies
+            </button>
+            <button class="tab" onclick="openTab('certificate')">
+                Certificates
+            </button>
+        </div>
+
+        <!-- PROJECT -->
+        <div id="projects" class="tab-content active">
+            <div class="container px-0">
+                <div class="row g-4">
+                    <!-- Project 1: OWI Chat -->
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 text-white border-0 project-card-custom">
+                            <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?q=80&w=600&auto=format&fit=crop"
+                                class="card-img-top" alt="OWI Chat Screenshot"
+                                style="height: 200px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="text-info h4 mb-3 font-weight-bold">OWI Chat</h3>
+                                <p class="text-secondary mb-4 flex-grow-1"
+                                    style="font-size: 0.95rem; line-height: 1.6; color: var(--gray) !important;">
+                                    Aplikasi obrolan waktu nyata (real-time chat) berbasis web yang aman dan responsif,
+                                    dibangun dengan Django, Firebase, dan WebSocket untuk komunikasi grup maupun privat
+                                    yang instan.
+                                </p>
+                                <div class="mb-4 d-flex flex-wrap gap-2">
+                                    <span
+                                        class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill"
+                                        style="font-size: 0.8rem; background-color: rgba(59, 130, 246, 0.18) !important; color: #fff !important;">Django</span>
+                                    <span
+                                        class="badge bg-warning-subtle text-warning border border-warning-subtle px-3 py-2 rounded-pill"
+                                        style="font-size: 0.8rem; background-color: rgba(245, 158, 11, 0.18) !important; color: #fff !important;">Firebase</span>
+                                    <span
+                                        class="badge bg-info-subtle text-info border border-info-subtle px-3 py-2 rounded-pill"
+                                        style="font-size: 0.8rem; background-color: rgba(6, 182, 212, 0.18) !important; color: #fff !important;">WebSocket</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Personal Portfolio v2 -->
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 text-white border-0 project-card-custom">
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=600&auto=format&fit=crop"
+                                class="card-img-top" alt="Portfolio Screenshot"
+                                style="height: 200px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="text-info h4 mb-3 font-weight-bold">Portfolio Website</h3>
+                                <p class="text-secondary mb-4 flex-grow-1"
+                                    style="font-size: 0.95rem; line-height: 1.6; color: var(--gray) !important;">
+                                    Desain website portofolio pribadi interaktif berkinerja tinggi, dibuat responsif
+                                    untuk menyajikan daftar karya, keahlian teknologi, dan sertifikat yang dimiliki.
+                                </p>
+                                <div class="mb-4 d-flex flex-wrap gap-2">
+                                    <span
+                                        class="badge bg-danger-subtle text-danger border border-danger-subtle px-3 py-2 rounded-pill"
+                                        style="font-size: 0.8rem; background-color: rgba(239, 68, 68, 0.18) !important; color: #fff !important;">HTML5</span>
+                                    <span
+                                        class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill"
+                                        style="font-size: 0.8rem; background-color: rgba(59, 130, 246, 0.18) !important; color: #fff !important;">Bootstrap
+                                        5</span>
+                                    <span
+                                        class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill"
+                                        style="font-size: 0.8rem; background-color: rgba(16, 185, 129, 0.18) !important; color: #fff !important;">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECHNOLOGY -->
+        <div id="tech" class="tab-content">
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+                <i class="fa-brands fa-html5"></i>
+                <h4>HTML</h4>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h4>CSS</h4>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                <i class="fa-brands fa-bootstrap"></i>
+                <h4>Bootstrap</h4>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <svg viewBox="0 0 24 24" style="width: 55px; height: 55px; margin: 0 auto 20px; display: block; fill: var(--cyan);">
+                    <path d="M12.001 4.8C9.601 4.8 8.101 6 7.501 8.4C8.401 7.2 9.451 6.75 10.651 7.05C11.336 7.221 11.826 7.717 12.371 8.269C13.259 9.17 14.301 10.22 16.501 10.22C18.901 10.22 20.401 9.02 21.001 6.62C20.101 7.82 19.051 8.27 17.851 7.97C17.166 7.799 16.676 7.303 16.131 6.751C15.244 5.85 14.201 4.8 12.001 4.8ZM7.501 10.22C5.101 10.22 3.601 11.42 3.001 13.82C3.901 12.62 4.951 12.17 6.151 12.47C6.836 12.641 7.326 13.137 7.871 13.689C8.759 14.59 9.801 15.64 12.001 15.64C14.401 15.64 15.901 14.44 16.501 12.04C15.601 13.24 14.551 13.69 13.351 13.39C12.666 13.219 12.176 12.723 11.631 12.171C10.744 11.27 9.701 10.22 7.501 10.22Z"/>
+                </svg>
+                <h4>Tailwind CSS</h4>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                <i class="fa-brands fa-js"></i>
+                <h4>JavaScript</h4>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fa-brands fa-python"></i>
+                <h4>Python</h4>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                <i class="fa-solid fa-fire"></i>
+                <h4>Firebase</h4>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fa-solid fa-database"></i>
+                <h4>MySQL</h4>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+                <i class="fa-brands fa-git-alt"></i>
+                <h4>Git</h4>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE -->
+        <div id="certificate" class="tab-content">
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/1.png">
+                <h4>CyberSecurity Principles</h4>
+            </div>
+
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/2.png">
+                <h4>Basic Cloud Computing</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--================ CONTACT ================-->
+    <section id="contact" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mx-auto mb-5" style="width: fit-content;" data-aos="fade-up">Mari Terhubung</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card border-0 shadow-sm p-4 rounded-4 text-center" data-aos="zoom-in" data-aos-delay="100">
+                        <p class="mb-4" style="color: var(--gray); font-size: 1rem; line-height: 1.6;">Saya saat ini siap untuk kesempatan Praktik Kerja Lapangan (PKL) atau kolaborasi proyek UI/UX. Silakan hubungi saya melalui jalur di bawah ini:</p>
+                        
+                        <div class="d-grid gap-3">
+                            <a href="mailto:fauzianfajare98@gmail.com" class="contact-btn-custom contact-btn-email text-start">
+                                <i class="bi bi-envelope-fill me-3 fs-5 align-middle"></i> fauzianfajare98@gmail.com
+                            </a>
+                            <a href="https://wa.me/6281350955548" target="_blank" class="contact-btn-custom contact-btn-whatsapp text-start">
+                                <i class="bi bi-whatsapp me-3 fs-5 align-middle"></i> +62 813-5095-5548
+                            </a>
+                            <div class="contact-btn-custom contact-btn-location text-start">
+                                <i class="bi bi-geo-alt-fill me-3 fs-5 align-middle"></i> Tenggarong, Kalimantan Timur
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ FOOTER ================-->
+    <footer>
+        <p>
+            © 2026 Fauzian Fajar. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
