@@ -210,6 +210,30 @@ window.addEventListener("load", () => {
 
 
 /*=========================================
+    MOBILE MENU TOGGLE
+=========================================*/
+
+const mobileMenu = document.getElementById("mobile-menu");
+const nav = document.querySelector("nav");
+
+if (mobileMenu && nav) {
+    mobileMenu.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
+
+    // Close mobile menu when clicking any nav link
+    const navLinksList = document.querySelectorAll("nav a");
+    navLinksList.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+            nav.classList.remove("active");
+        });
+    });
+}
+
+
+/*=========================================
     CONSOLE
 =========================================*/
 
